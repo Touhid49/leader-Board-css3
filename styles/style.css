@@ -1,0 +1,267 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Top navigation */
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: blue;
+    width: 100%;
+    Height: 70px;
+    padding-left: 10px;
+    font-weight: 800;
+    align-items: center;
+
+}
+
+.topnav a {
+
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+}
+
+.idea {
+    position: relative;
+    padding-right: 600px;
+    font-size: 3em;
+    color: coral;
+
+}
+
+.text {
+    position: absolute;
+    padding-right: 790px;
+    font-size: 2em;
+}
+
+.topnav a:hover {
+    background-color: burlywood;
+    color: black;
+}
+
+.my-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+
+/* body color */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #9F9F9F;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+/* main */
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* -------------------
+Container
+------------------------ */
+.container {
+    background-color: #FFFFFF;
+    width: 850px;
+    height: 620px;
+    padding: 30px;
+    border-radius: 16px;
+
+
+
+}
+
+/* --------------
+last-container
+---------------- */
+.last-container {
+    background-color: #FFFFFF;
+    width: 850px;
+    height: 620px;
+    padding: 30px;
+    border-radius: 16px;
+    margin-top: 10px;
+
+
+
+}
+
+h3 {
+    padding-left: 1em;
+    margin-top: 0%;
+}
+
+.section-title {
+    color: #562EFF;
+    padding: 0%;
+}
+
+/* Top-players-style */
+.Top-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+
+
+
+
+
+}
+
+.player {
+    display: flex;
+    align-items: center;
+
+
+}
+
+/* Image size fixing */
+.player img {
+
+    height: 56px;
+    width: 56px;
+
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-top: 21px;
+}
+
+/* Top blogs Style  */
+.blog .thumnail img {
+    width: 224px;
+    height: 127px;
+}
+
+.Top-blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2em;
+
+
+
+}
+
+.blog {
+    display: flex;
+}
+
+.author-name {
+    text-decoration: none;
+    color: 562EFF;
+}
+
+p {
+    color: yellowgreen;
+    padding-left: 10px;
+}
+
+.block-title {
+    padding-left: 10px;
+}
+
+.blog-info {
+    font-size: small;
+}
+
+/* Top-courses-css */
+.courses {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em;
+    margin: 1em;
+}
+
+.courses .course-banner img {
+    width: 200px;
+    height: 141px;
+    padding-left: 15px;
+}
+
+
+.course {
+    border-radius: 2em;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px #888888;
+
+}
+
+.filled {
+    color: yellow;
+}
+
+.empty {
+    color: gray;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-duration {
+    background-color: wheat;
+    border-radius: 10px;
+    padding-left: 2em;
+
+}
+
+.c-clolor {
+    color: #FF4A60;
+
+    padding-right: 10px;
+}
+
+/*------------------
+ Media Queries
+ ------------------ */
+/* FOr Mobile device */
+@media only screen and (max-width:668px) {
+    .container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .Top-players,
+    .Top-blogs {
+        background-color: blue;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .courses {
+        background-color: lightseagreen;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    /* last-container */
+
+}
